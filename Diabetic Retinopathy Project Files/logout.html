@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="logout-wrapper">
+    <div class="logout-card">
+        <h1 class="page-title">Successfully Logged Out!</h1>
+
+        <a href="{{ url_for('login') }}" class="primary-btn logout-btn">Login</a>
+    </div>
+</section>
+{% endblock %}

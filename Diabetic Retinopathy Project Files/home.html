@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="home-wrapper">
+    <div class="home-card">
+        <h1 class="page-title">Diabetic Retinopathy Classification</h1>
+        <div class="home-image-row">
+            <img src="{{ url_for('static', filename='images/home.jpg') }}" alt="Normal and diabetic eye" class="home-main-image">
+        </div>
+
+        <div class="home-columns">
+            <div class="home-column">
+                <h2 class="home-subheading">Problem:</h2>
+                <p class="home-text">
+                    Diabetic Retinopathy (DR) is a common complication of diabetes mellitus that affects the retina and can lead to irreversible vision loss if not detected early.
+                </p>
+            </div>
+            <div class="home-column">
+                <h2 class="home-subheading">Solution:</h2>
+                <p class="home-text">
+                    This project builds a machine learning model that detects and classifies different stages of DR from fundus images and presents the results in a user‑friendly web interface.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
